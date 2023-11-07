@@ -1,0 +1,13 @@
+ {{#if posts.length}}
+  <div class="col-md-6 project-list">
+
+    {{#each posts as |post| }}
+        {{> post-card-dashboard}}
+    {{/each}}
+  </div>
+{{/if}}
+</div>
+
+<button type="submit"><a href="/new-post">New Post</a></button>
+
+<script src="./js/profile.js"></script>

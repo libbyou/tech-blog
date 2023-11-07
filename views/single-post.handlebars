@@ -1,0 +1,17 @@
+{{> post-card}}
+
+{{#if loggedIn}}
+<form>
+    <label>Comment</label>
+    <input class="form-input" type="text">
+    <button type="submit">Submit</button>
+</form>
+{{/if}}
+
+{{#each comments as |comment| }}
+    {{> comment}}
+{{/each}}
+
+{{#if loggedIn}}
+<script src="./js/comments.js"></script>
+{{/if}}
